@@ -33,8 +33,7 @@ public class Book {
     @ManyToOne
     private LibrarySection librarySection;
 
-    public Book(Long id, String title, String authors, Integer publicationYear, Integer price, String isbn, String keywords, String description, LibrarySection librarySection) {
-        this.id = id;
+    public Book(String title, String authors, Integer publicationYear, Integer price, String isbn, String keywords, String description, LibrarySection librarySection) {
         this.title = title;
         this.authors = authors;
         this.publicationYear = publicationYear;
